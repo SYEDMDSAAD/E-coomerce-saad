@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="cart-container">
+        <h1>Your Shopping Cart</h1>
+        <div id="cart-items1" class="cart-items"></div>
+        <div class="cart-footer">
+            <button id="clear-cart" class="btn-clear">Clear Cart</button>
+            <button id="proceed-checkout" class="btn-checkout">Proceed to Checkout</button>
+        </div>
+
+        <!-- Checkout form to collect user details -->
+        <div id="checkout-form" class="checkout-section" style="display: none;">
+            <h2>Enter Your Details</h2>
+            <form id="checkout-details-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <button type="submit" class="btn-submit">Submit Details</button>
+            </form>
+        </div>
+
+        <!-- Final price and payment section -->
+        <div id="checkout-section" class="checkout-section" style="display: none;">
+            <h2>Final Price: $<span id="final-price">0</span></h2>
+            <button id="pay-button" class="btn-pay">Pay Now</button>
+        </div>
+    </div>
+    <script src="cart.js"></script>
+</body>
+</html>
