@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     <link rel="stylesheet" href="styles2.css">
 </head>
 <body>
     <div class="cart-container">
         <h1>Your Shopping Cart</h1>
         <div id="cart-items1" class="cart-items"></div>
+        
         <div class="cart-footer">
             <button id="clear-cart" class="btn-clear">Clear Cart</button>
             <button id="proceed-checkout" class="btn-checkout">Proceed to Checkout</button>
@@ -32,10 +34,11 @@
 
         <!-- Final price and payment section -->
         <div id="checkout-section" class="checkout-section" style="display: none;">
-            <h2>Final Price: $<span id="final-price">0</span></h2>
+            <h2>Final Price: ₹<span id="final-price">0</span></h2>
             <button id="pay-button" class="btn-pay">Pay Now</button>
         </div>
     </div>
-    <script src="cart.js"></script>
+    <!--<script src="cart.js"></script>-->
+    <script src="checkout.js"></script>
 </body>
 </html>

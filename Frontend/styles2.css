@@ -136,7 +136,7 @@ input {
     border: 1px solid #ddd;
     border-radius: 6px;
     font-size: 1em;
-    width: 100%;
+    width: 95%;
 }
 .auth-container, .admin-container {
     max-width: 400px;
@@ -149,4 +149,30 @@ input {
 
 h1 {
     text-align: center;
+}
+
+.btn-clear, .btn-checkout, .btn-submit, .btn-pay {
+    background-color: #F37254;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-clear:hover, .btn-checkout:hover, .btn-submit:hover, .btn-pay:hover {
+    background-color: #D65A38;
+}
+
+.checkout-section {
+    margin-top: 20px;
+}
+
+.checkout-section input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
